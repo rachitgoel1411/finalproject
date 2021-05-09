@@ -1,6 +1,6 @@
 # finalproject
 Download the code directly and run on browser directly , or can run through vs code and go live.
-finalproject.html
+Project name : finalproject.html
 Team details : Rachit Goel
                Hemant Bansal
 	      Hemant chauhan
