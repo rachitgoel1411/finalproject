@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>INDIAN HACKERS</title>
+    <style>
+        #customers {
+          font-family: Arial, Helvetica, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        #customers td, #customers th {
+          border: 1px solid #ddd;
+          padding: 8px;
+        }
+        
+        #customers tr:nth-child(even){background-color: #f2f2f2;}
+        
+        #customers tr:hover {background-color: #ddd;}
+        
+        #customers th {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          text-align: left;
+          background-color: #4CAF50;
+          color: white;
+        }
+        #rac{background-color: skyblue;}
+        </style>
+        <style>
+          #cm {
+            font-size: 30px; 
+            text-align: center
+          }
+          .rachit {
+            background-color: skyblue;   
+            border-radius: 8px;  
+            width: 110px;
+            border-width: 2px;
+            border-color: purple;
+            border-style: solid;
+
+          }
+          #cs {
+            font-size: 80px;
+            text-align: center
+          }
+          
+          }
+        </style>
+</head>
+<body>
+    
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl">Covid Care</span>
+          </a>
+          <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+            <a href="#text-gray-600 body-font1" class="mr-5 hover:text-gray-900">HOME</a>
+            <a href="#text-gray-600 body-font2">SYMPTOMS&nbsp&nbsp&nbsp</a>
+            <a href="#text-gray-600 body-font3"class="mr-5 hover:text-gray-900">PRECAUTIONS</a>
+            <a href="#text-gray-600 body-font4" class="mr-5 hover:text-gray-900">HOME TREATMENT</a>
+            <a href="#cm"class="mr-5 hover:text-gray-900">CHIEF MINISTER</a>
+            <a href="#cs" class="mr-5 hover:text-gray-900">OXYGEN AVAILABILITY</a>
+            <a href="#text-gray-600 body-font7" class="mr-5 hover:text-gray-900">ABOUT US</a>
+          </nav>
+          <button class="inline-flex items-center bg-red-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0"><a href="https://www.worldometers.info/coronavirus/country/india/" target="_blanik" >LIVE COUNT</a>
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </header>
+      <section id="text-gray-600 body-font1">
+        <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+          <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="data:image/jpeg;base64,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">
+          <div class="text-center lg:w-2/3 w-full">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">STAY HOME , STAY SAFE</h1>
+            <p class="mb-8 leading-relaxed"><strong>We are team of three </strong><br> We have created this website in order to let you know about various symptoms and preventions related to COVID-19 and also get the twitter handles of head of states if you face any medical emergency in any part of india.</p>
+            <div class="flex justify-center">
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="text-gray-600 body-font2">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">SYMPTOMS</h1>
+            <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">COVID-19 affects different people in different ways. Most infected people will develop mild to moderate illness and recover without hospitalization.</p>
+          </div>
+          <div class="flex flex-wrap -m-4">
+            <div class="xl:w-1/3 md:w-1/2 p-4">
+              <div class="border border-gray-200 p-6 rounded-lg">
+                <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                  </svg>
+                </div>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Most common symptoms:</h2>
+                <p class="leading-relaxed text-base"><ul style="list-style-type:disc;">
+                    <li>Fever</li>
+                    <li>Cough</li>
+                    <li>Tiredness</li>
+                  </ul></p>
+              </div>
+            </div>
+            <div class="xl:w-1/3 md:w-1/2 p-4">
+              <div class="border border-gray-200 p-6 rounded-lg">
+                <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                    <circle cx="6" cy="6" r="3"></circle>
+                    <circle cx="6" cy="18" r="3"></circle>
+                    <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+                  </svg>
+                </div>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Less common symptoms:</h2>
+                <p class="leading-relaxed text-base"><ul style="list-style-type:disc;">
+                    <li>Sore throat</li>
+                    <li>Diarrhoea</li>
+                    <li>Headache</li>
+                    <li>Loss of taste or smell</li>
+                  </ul></p>
+              </div>
+            </div>
+            <div class="xl:w-1/3 md:w-1/2 p-4">
+              <div class="border border-gray-200 p-6 rounded-lg">
+                <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </svg>
+                </div>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Serious symptoms:</h2>
+                <p class="leading-relaxed text-base"><ul style="list-style-type:disc;">
+                    <li>Difficulty breathing or shortness of breath</li>
+                    <li>Chest pain or pressure</li>
+                    <li>Loss of speech or movement</li>
+                  </ul></p>
+              </div>
+            </div>
+          <section id="text-gray-600 body-font3">
+            <div class="container px-5 py-24 mx-auto">
+              <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">PRECAUTIONS</h1>
+                <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">Take precautions for your loved ones rather than yourself.<br>For them your life is worth much more than you actually think!!</p>
+              </div>
+              <div class="flex flex-wrap -m-4">
+                <div class="xl:w-1/3 md:w-1/2 p-4">
+                  <div class="border border-gray-200 p-6 rounded-lg">
+                    <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                      </svg>
+                    </div>
+                    <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Wear Mask:</h2>
+                    <p class="leading-relaxed text-base">Wear a 3-ply mask to prevent direct contact with virus.</p>
+                  </div>
+                </div>
+                <div class="xl:w-1/3 md:w-1/2 p-4">
+                  <div class="border border-gray-200 p-6 rounded-lg">
+                    <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                        <circle cx="6" cy="6" r="3"></circle>
+                        <circle cx="6" cy="18" r="3"></circle>
+                        <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+                      </svg>
+                    </div>
+                    <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Wash you hands:</h2>
+                    <p class="leading-relaxed text-base">Wash/sanitize your hands regularily to get rid of virus if it accidently land onto your hand.</p>
+                  </div>
+                </div>
+                <div class="xl:w-1/3 md:w-1/2 p-4">
+                  <div class="border border-gray-200 p-6 rounded-lg">
+                    <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                        <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                      </svg>
+                    </div>
+                    <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Mantain social distancing:</h2>
+                    <p class="leading-relaxed text-base">You must remain 6 feet apart from everyone at all times to prevent the spread of virus.</p>
+                  </div>
+                </div>
+                <div class="xl:w-1/3 md:w-1/2 p-4">
+                  <div class="border border-gray-200 p-6 rounded-lg">
+                    <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                        <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"></path>
+                      </svg>
+                    </div>
+                    <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Get vaccinated:</h2>
+                    <p class="leading-relaxed text-base">Vaccine is already tested and proven safe. So, when its your turn don't hesitate to get vaccinated.</p>
+                  </div>
+                </div>
+                <div class="xl:w-1/3 md:w-1/2 p-4">
+                  <div class="border border-gray-200 p-6 rounded-lg">
+                    <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                      </svg>
+                    </div>
+                    <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Use face shield:</h2>
+                    <p class="leading-relaxed text-base">Whenever in contact with a contaminated person, you must use a face shield to prevent direct splash onto your face.</p>
+                  </div>
+                </div>
+                <div class="xl:w-1/3 md:w-1/2 p-4">
+                  <div class="border border-gray-200 p-6 rounded-lg">
+                    <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                      </svg>
+                    </div>
+                    <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Stay home:</h2>
+                    <p class="leading-relaxed text-base">It is obviously the best way to prevent yourself from catching the virus. Don't leave your home unless it is really urgent.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <section id="text-gray-600 body-font4">
+              <div class="container px-5 py-24 mx-auto">
+                <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
+                  <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Home treatment</h1>
+                  <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">As it is not always that the person need to be hospitalised after catching the virus, so the following treatments could be done at home in order to cure.</p>
+                </div>
+                <div class="flex flex-wrap -m-4">
+                  <div class="xl:w-1/3 md:w-1/2 p-4">
+                    <div class="border border-gray-200 p-6 rounded-lg">
+                      <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                          <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                        </svg>
+                      </div>
+                      <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Routine</h2>
+                      <p class="leading-relaxed text-base"><ul style="list-style-type:disc;">
+                        <li>1 glass warm water(daily)</li>
+                        <li>Warm lemon water - 2 times(daily)</li>
+                        <li>Steam - 3 times(daily)</li>
+                        <li>Salty water gargles - 2 times(daily)</li>
+                        <li>Have proper breakfast, lunch and dinner</li>
+                        <li>Take proper rest</li>
+                      </ul></p>
+                    </div>
+                  </div>
+                  <div class="xl:w-1/3 md:w-1/2 p-4">
+                    <div class="border border-gray-200 p-6 rounded-lg">
+                      <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                          <circle cx="6" cy="6" r="3"></circle>
+                          <circle cx="6" cy="18" r="3"></circle>
+                          <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+                        </svg>
+                      </div>
+                      <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Medicines</h2>
+                      <p class="leading-relaxed text-base"><ul style="list-style-type:disc;">
+                        <li>Tab. Limci - 2 times(daily)</li>
+                        <li>Tab. Zincovit - 2 times(daily)</li>
+                        <li>Tab. Giloy - 2 times(daily)</li>
+                        <li>Tab. Ghamvati - 2 times(daily)</li>
+                        <li>Chawanprash - 2 spoons(daily)</li>
+                        <li>Herbal Kadha - 2 times(daily)</li>
+                      </ul></p>
+                    </div>
+                  </div>
+                  <div class="xl:w-1/3 md:w-1/2 p-4">
+                    <div class="border border-gray-200 p-6 rounded-lg">
+                      <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                          <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                          <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                      </div>
+                      <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Mind makeup</h2>
+                      <p class="leading-relaxed text-base"><ul style="list-style-type:disc;">
+                        <li>Stay positive all the time</li>
+                        <li>Be happy</li>
+                        <li>Enjoy your quarantine :)</li>
+                        <li>Read books</li>
+                        <li>Remember, you gonna be well soon</li>
+                      </ul></p>
+                    </div>
+                  </div>
+                  
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </section>
+          <h1 id="cm"><strong>Chief Ministers</strong></h1>
+          <br>
+          <br>
+          <table id="customers">
+            <tr>
+              <th>State</th>
+              <th>Chief Minister</th>
+              <th id="rac" >Twitter handle</th>
+            </tr>
+            <tr>
+              <td>Andhra Pradesh</td>
+              <td>Shri YS Jagan Mohan Reddy</td>
+              <td><a href="https://twitter.com/AndhraPradeshCM?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blanik"> <button class="rachit">CLICK HERE</button></a></td>
+            </tr>
+            <tr>
+              <td>Arunachal Pradesh</td>
+              <td>Shri Pema Khandu</td>
+              <td><a href="https://twitter.com/pemakhandubjp?lang=en" target="_blanik"><button class="rachit">CLICK HERE</button></a></td>
+            </tr>
+            <tr>
+              <td>Assam</td>
+              <td>	Shri Sarbananda Sonowal</td>
+              <td><a href="https://twitter.com/sarbanandsonwal?lang=en" target="_blanik"><button class="rachit">CLICK HERE</button></a></td>
+            </tr>
+            <tr>
+                <td>Bihar</td>
+                <td>Shri Nitish Kumar</td>
+                <td><a href="https://twitter.com/nitishkumar?lang=en" target="_blanik"><button class="rachit">CLICK HERE</button></a></td>
+              </tr>
+              <tr>
+                <td>Chhattisgarh</td>
+                <td>Shri Bhupesh Baghel</td>
+                <td><a href="https://twitter.com/bhupeshbaghel?lang=en" target="_blanik"><button class="rachit">CLICK HERE</button></a></td>
+              </tr>
+              <tr>
+                <td>Delhi (NCT)</td>
+                <td>Shri Arvind Kejriwal</td>
+                <td><a href="https://twitter.com/arvindkejriwal?lang=en" target="_blanik"><button class="rachit">CLICK HERE</button></a></td>
+              </tr>
+              <tr>
+                <td>Goa</td>
+                <td>Shri Pramod Sawant</td>
+                <td><a href="https://twitter.com/drpramodpsawant?lang=en" target="_blanik"><button class="rachit">CLICK HERE</button></a></td>
+              </tr>
+              <tr>
+                <td>Gujarat</td>
+                <td>Shri Vijaybhai R. Rupani</td>
+                <td><a href="https://twitter.com/vijayrupanibjp?lang=en" target="_blanik"><button class="rachit">CLICK HERE</button></a></td>
+              </tr>
+              <tr>
+                <td>Haryana</td>
+                <td>Shri Manohar Lal</td>
+                <td><a href="https://twitter.com/mlkhattar" target="_blanik"><button class="rachit">CLICK HERE</button></a></td>
+              </tr>
+              <tr>
+                <td>Himachal Pradesh</td>
+                <td>Shri Jairam Thakur</td>
+                <td><a href="https://twitter.com/jairamthakurbjp?lang=en" target="_blanik"><button class="rachit">CLICK HERE</button></a></td>
+              </tr>
+              <tr>
+                <td>Jharkhand</td>
+                <td>Shri Hemant Soren</td>
+                <td><a href="https://twitter.com/hemantsorenjmm?lang=en" target="_blanik"><button class="rachit">CLICK HERE</button></a></td>
+              </tr>
+              <tr>
+                <td>Karnataka</td>
+                <td>Sri B. S. Yediyurappa</td>
+                <td><a href="https://twitter.com/bsybjp?lang=en" target="_blanik"><button class="rachit">CLICK HERE</button></a></td>
+              </tr>
+              <tr>
+                <td>Kerala</td>
+                <td>Shri Pinarayi Vijayan</td>
+                <td><a href="https://twitter.com/vijayanpinarayi?lang=en" target="_blanik"><button class="rachit">CLICK HERE</button></a></td>
+              </tr>
+              <tr>
+                <td>Madhya Pradesh</td>
+                <td>Shri Shivraj Singh Chouhan</td>
+                <td><a href="https://twitter.com/chouhanshivraj?lang=en" target="_blanik"><button class="rachit">CLICK HERE</button></a></td>
+              </tr>
+              <tr>
+                <td>Maharashtra</td>
+                <td>Shri Uddhav Thackeray</td>
+                <td><a href="https://twitter.com/officeofut?lang=en" target="_blanik"><button class="rachit">CLICK HERE</button></a></td>
+              </tr>
+              <tr>
+                <td>Manipur</td>
+                <td>Shri N. Biren Singh</td>
+                <td><a href="https://twitter.com/nbirensingh?lang=en" target="_blanik"><button class="rachit">CLICK HERE</button></a></td>
+              </tr>
+              <tr>
+                <td>Meghalaya</td>
+                <td>	Shri Conrad Kongkal Sangma</td>
+                <td><a href="https://twitter.com/sangmaconrad?lang=en#:~:text=Conrad%20Sangma%20(%40SangmaConrad)%20%7C%20Twitter" target="_blanik"><button class="rachit">CLICK HERE</button></a></td>
+              </tr>
+              <tr>
+                <td>Mizoram</td>
+                <td>	Shri Pu Zoramthanga</td>
+                <td><a href="https://twitter.com/zoramthangacm?lang=en" target="_blanik"><button class="rachit">CLICK HERE</button></a></td>
+              </tr>
+              <tr>
+                <td>Nagaland</td>
+                <td>Shri Neiphiu Rio</td>
+                <td><a href="https://twitter.com/neiphiu_rio?lang=en#:~:text=Neiphiu%20Rio%20(%40Neiphiu_Rio)%20%7C%20Twitter" target="_blanik"><button class="rachit">CLICK HERE</button></a></td>
+              </tr>
+              <tr>
+                <td>Odisha</td>
+                <td>	Shri Naveen Patnaik</td>
+                <td><a href="https://twitter.com/naveen_odisha?lang=en" target="_blanik"><button class="rachit">CLICK HERE</button></a></td>
+              </tr>
+              <tr>
+                <td>Puducherry (UT)</td>
+                <td>Shri N. Rangaswamy</td>
+                <td><a href="https://twitter.com/narendramodi/status/1390595451632504833" target="_blanik"><button class="rachit">CLICK HERE</button></a></td>
+              </tr>
+              <tr>
+                <td>Punjab</td>
+                <td>Shri Capt. Amarinder Singh</td>
+                <td><a href="https://twitter.com/capt_amarinder?lang=en" target="_blanik"><button class="rachit">CLICK HERE</button></a></td>
+              </tr>
+              <tr>
+                <td>Rajasthan</td>
+                <td>Shri Ashok Gehlot</td>
+                <td><a href="https://twitter.com/ashokgehlot51?lang=en" target="_blanik"><button class="rachit">CLICK HERE</button></a></td>
+              </tr>
+              <tr>
+                <td>Sikkim</td>
+                <td>Shri PS Golay</td>
+                <td><a href="https://twitter.com/pstamang?lang=en" target="_blanik"><button class="rachit">CLICK HERE</button></a></td>
+              </tr>
+              <tr>
+                <td>Tamil Nadu</td>
+                <td>Shri M. K. Stalin</td>
+                <td><a href="https://twitter.com/mkstalin?lang=en" target="_blanik"><button class="rachit">CLICK HERE</button></a></td>
+              </tr>
+            <tr>
+              <td>Telangana</td>
+              <td>Shri K Chandrasekhar Rao</td>
+              <td><a href="https://twitter.com/TelanganaCMO?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blanik"><button class="rachit">CLICK HERE</button></a></td>
+            </tr>
+            <tr>
+              <td>Tripura</td>
+              <td>Shri Biplab Kumar Deb</td>
+              <td><a href="https://twitter.com/bjpbiplab?lang=en" target="_blanik"><button class="rachit">CLICK HERE</button></a></td>
+            </tr>
+            <tr>
+              <td>Uttar Pradesh</td>
+              <td>Shri Yogi Aditya Nath</td>
+              <td><a href="https://twitter.com/myogiadityanath" target="_blanik"><button class="rachit">CLICK HERE</button></a></td>
+            </tr>
+            <tr>
+              <td>Uttarakhand</td>
+              <td>Shri Tirath Singh Rawat</td>
+              <td><a href="https://twitter.com/tirathsrawat?lang=en" target="_blanik"><button class="rachit">CLICK HERE</button></a></td>
+            </tr>
+            <tr>
+              <td>West Bengal</td>
+              <td>	Km. Mamata Banerjee</td>
+              <td ><a href="https://twitter.com/MamataOfficial?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blanik"><button class="rachit">CLICK HERE</button></a></td>
+            </tr>
+            
+          </table>
+          <br><br><br><br>
+          <br>
+          <br>
+          <br>
+          <br><br>
+          <h1 id="cs"><strong>COMING SOON...</strong></h1>
+          <br><br><br><br><br><br><br><br><br><br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <section id="text-gray-600 body-font7">
+            <div class="container px-5 py-24 mx-auto">
+              <div class="flex flex-wrap -m-4">
+                <div class="p-4 md:w-1/3">
+                  <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                    <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://drive.google.com/uc?id=1LKUl6v40RdcWMoAUPd5FOddC3WVhcuhK" alt="blog">
+                    <div class="p-6">
+                      <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Member 1</h2>
+                      <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Rachit Goel</h1>
+                      <p class="leading-relaxed mb-3">IIT Mandi<br>First year<br><strong>Contact No.:</strong> 9838377955<br><strong>Email:</strong> b20309@students.iitmandi.ac.in</p>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="p-4 md:w-1/3">
+                  <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                    <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://drive.google.com/uc?id=1zcdxW8je9GVYfefVSKhMznPatKZxZxHq" alt="blog">
+                    <div class="p-6">
+                      <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Member 2</h2>
+                      <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Hemant Chauhan</h1>
+                      <p class="leading-relaxed mb-3">IIT Mandi<br>First year<br><strong>Contact No.:</strong> 9610072980<br><strong>Email:</strong> b20289@students.iitmandi.ac.in</p>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="p-4 md:w-1/3">
+                  <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                    <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://drive.google.com/uc?id=1RANuQMWzuFyrCgWBH-AvPh9XD86jvcDH" alt="blog">
+                    <div class="p-6">
+                      <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Member 3</h2>
+                      <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Hemant Bansal</h1>
+                      <p class="leading-relaxed mb-3">IIT Mandi<br>First year<br><strong>Contact No.:</strong> 7009727311<br><strong>Email:</strong> b20288@students.iitmandi.ac.in</p>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+</body>
+</html>
